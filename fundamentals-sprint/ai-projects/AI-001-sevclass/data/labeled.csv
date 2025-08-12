@@ -1,0 +1,7 @@
+text,label
+SQL injection in parameter 'q' enables data exfiltration,high
+Verbose error message leaks server version,low
+Privilege escalation via misconfigured ACL,high
+Missing rate limiting on login endpoint,medium
+Reflected XSS on search page,medium
+Directory listing enabled on /uploads,low
