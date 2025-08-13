@@ -30,3 +30,16 @@ netstat -ano | head -n 20
 **Remediation:**
 - Rate-limit suspicious source IPs; SYN cookies on servers.
 - Log connection attempts and failures for anomaly detection.
+
+## Findings (filled)
+- :80 HTTP status = **200 OK** ; :443 HTTPS status = **200 OK**
+- :81 result = **timed out** → treated as **filtered** (no TCP RST)
+- netstat sample (local listeners):
+  - TCP 0.0.0.0:135      0.0.0.0:0   LISTENING   1872
+  - TCP 0.0.0.0:445      0.0.0.0:0   LISTENING   4
+  - TCP 0.0.0.0:49664    0.0.0.0:0   LISTENING   7036
+
+## Notes (so it sticks)
+- **Closed** = host actively refuses (RST). **Filtered** = no reply (timeout).
+- Ports 80/443 are the normal web surface; odd ports (like 81) often get blocked.
+- `0.0.0.0` listeners = potential attack surface if exposed; NAT/firewall usually shields them.
